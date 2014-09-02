@@ -99,8 +99,14 @@ nav li a{
     color:#fff;
  }
 
- #main_content a{
+ .move a{
  	text-decoration: none;
+ 	color:#fff;
+ 	outline: none; /*to fix dashed border in firefox*/
+ }
+
+ .move a:hover{
+ 	color:#414042;
  }
 
 #seventh, #first{
