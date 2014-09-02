@@ -1,0 +1,181 @@
+/*************Navigation**************************************/
+#body{
+	color:#000;
+	font-family: sans-serif;
+}
+
+.outer_nav{
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.inner_nav{
+	width:960px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.inner_nav h1{
+	float:left;
+	font-weight:lighter !important;
+	letter-spacing: 2px;
+	font-size:26px;
+}
+
+.inner_nav a{
+	color:#000;
+}
+
+nav ul{
+	float:right;
+}
+
+nav li{
+	float:left;
+	list-style-type: none;
+	padding-left:20px;
+}
+
+nav li a{
+	text-decoration: none;
+	color:#000;
+	line-height:40px;
+	letter-spacing: 2px;
+}
+
+/*************Main**************************************/
+
+.outer_main{
+	background-color:#414042;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.inner_main{
+	width:960px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#main_content{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+.column{
+	float:left;
+	width:190px;
+}
+
+#firstCol, #fifthCol{
+	padding-top:35%;
+}
+
+#secondCol, #fourthCol{
+	padding-top:20%;
+}
+
+#thirdCol{
+	padding-top:5%;
+}
+
+#second, #ninth{
+	background-color:#E80CDF;
+}
+
+#fifth{
+	background-color:#333;
+}
+
+/*using <p> with <a> because it appears that <a> tags do not utilize transform*/
+#main_content p{ 
+	-webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+    height:100%;
+    padding-top:50%;
+    font-family: Satisfy,serif;
+    margin:0px;
+    color:#fff;
+ }
+
+ #main_content a{
+ 	text-decoration: none;
+ }
+
+#seventh, #first{
+	background-color:#FF0000;
+}
+
+#eighth, #sixth{
+	background-color:#E8490C;
+}
+
+#third, #fourth{
+	background-color:#FF940D;
+}
+
+.move{
+   animation: bringForth 3s;
+    -webkit-animation: bringForth 3s;
+    -webkit-animation-fill-mode: forwards;
+
+    margin-bottom:100px;
+ }
+
+@-webkit-keyframes bringForth{
+	from{
+		width:80px;
+		height:80px;
+		-webkit-transform:rotate(0deg);
+		font-size:1px;
+	}
+
+	to{ 
+		width:190px; 
+		height:190px;
+		-webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+		-webkit-transform:rotate(315deg);
+		font-size:40px;
+	}
+
+	/*-webkit-transition: width 2s, height 2s;
+	-webkit-transform: 2s;
+	-webkit-transform:rotate(360deg);*/
+ }
+
+
+/*@keyframes myfirst bringForth{
+   from{width:100px;}
+	to{width:300px;}
+	transition: width 1s, height 1s, transform 1s;
+}*/
+
+/*#first{
+
+	-webkit-transform:rotate(0deg);
+
+}
+
+#first:hover{
+	background-color:black;
+	-webkit-transform:rotate(360deg);
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-duration: 2000ms;
+
+
+}*/
+
+/************* Clearfix **************************************/
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     line-height: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     width: 0;
+     }
