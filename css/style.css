@@ -24,6 +24,7 @@
 
 .inner_nav a{
 	color:#000;
+	outline: none; /*to fix dashed border in firefox*/
 }
 
 .inner_nav a:hover{
